@@ -1,4 +1,4 @@
-auto: true
 markdown: rdiscount
+pygments: true
 permalink: /:year/:month/:day/:title
-rdiscount extensions: [smart]
+exclude: README.md CNAME Procfile config.rb sass
