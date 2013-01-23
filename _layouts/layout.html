@@ -1,17 +1,50 @@
-<!DOCTYPE HTML>
-
+<!doctype html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="Jais Cheema" />
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
-    </header>
-    <section>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>{{ page.title }}</title>
+   <meta name="description" content="Web presence for Village of Raisar">
+   <meta name="author" content="Jais Cheema">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="/css/screen.css">
+   <link href='http://fonts.googleapis.com/css?family=Arvo|Mrs+Saint+Delafield|Goudy+Bookletter+1911|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   <div class="wrap">
+      <div id="header">
+         <div class="container">
+            <h1><a href="/">Raisar</a></h1>
+         </div>
+      </div>
       {{ content }}
-    </section>
-  </body>
+      <div class="push"></div>
+   </div>
+   <div id="footer">
+      <div class="container">
+         Copyright &copy; 2013 <a href="http://jaischeema.com">Jais Cheema</a>. All rights reserved.
+      </div>
+   </div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXX-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics Code -->
+<script src="/js/jquery-1.9.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+   $(document).ready(function() {
+      $('.carousel').carousel();
+   });
+</script>
+</body>
 </html>

@@ -1,1 +1,70 @@
 @import "compass_twitter_bootstrap";
+
+body,html 
+{
+   height: 100%;
+}
+
+.wrap
+{
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -60px;
+}
+
+.push, #footer 
+{
+   height: 60px;
+}
+
+body
+{
+   font-family: "Open Sans";
+   font-weight: 400;
+}
+
+#header
+{
+   background-color: purple;
+   text-align:center;
+   padding: 40px 0;
+   h1 a 
+   {
+      color: #ddd;
+      font-weight: 300;
+      font-size: 42px;
+
+      &:hover
+      {
+         text-decoration: none;
+         color: #fff;
+      }
+   }
+}
+
+.carousel
+{
+   margin-bottom: 0px;
+}
+
+h2
+{
+   font-weight: 400;
+   color: purple;
+}
+
+.images
+{
+   background-color: #ccc;
+}
+
+
+#footer
+{
+   background-color: whitesmoke;
+   padding: 20px 0;
+   height: 20px;
+   font-size: 15px;
+   color: #999;
+}

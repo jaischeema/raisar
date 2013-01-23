@@ -1,10 +1,13 @@
 ---
 layout: layout
 ---
-
-<div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
-  </div>
+<div class="post-container">
+   <div class="post">
+      <header>
+         <h1><a href={{ page.url }}>{{ page.title }}</a></h1>
+      </header>
+      <article>
+         {{ content }}
+      </article>
+   </div>
 </div>
